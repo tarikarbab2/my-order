@@ -1,0 +1,30 @@
+.recomended{
+    color:$color-black;
+    text-align: center;
+    &__logo{
+        width: 90%;
+        height: 24rem;
+        // margin-right: 25%;
+        // margin-left: 25%;
+        // box-shadow: 2rem 2rem 4rem rgba($color-black,.4);
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        
+    }
+    &__text{
+        font-weight: 300;
+        
+        font-size: 1.5rem;
+        display: inline-block;
+        width: 40%;
+    }
+    &__btn:link,
+    &__btn:visited{
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        color: $color-black;
+    }
+
+}

@@ -1,0 +1,64 @@
+.nav{
+    @include clear-fix;
+    
+    &__logo {
+        width: 14rem;
+        height: 14rem;
+        float: left;
+        padding-top: 1rem;
+        @include responed(tablet-landscape){
+            width: 9rem;
+            height: 9rem;
+            position: absolute;
+            top: 2rem;
+            left: 6rem;
+            
+        }
+    }
+
+    &__list{
+
+        float: right;
+        list-style: none;
+        
+        font-weight: 300;
+        font-size: 2rem;
+        margin-top: 4rem;
+        @include responed(tablet-landscape){
+            display: none;
+            
+        }
+        
+    }
+    &__item{
+        display: inline-block;
+       
+        &:not(:last-child){
+            padding-right: 3rem;
+
+        }
+        
+    
+    }
+   
+    &__link:link,
+    &__link:visited{
+        color: $color-white;
+        text-decoration: none;
+        transition: all 0.1s;
+        text-transform: uppercase;
+        
+    }
+    
+    &__link:hover,
+    &__link:active{
+        font-weight: 400;
+        padding-bottom:0.3rem ;
+        border-bottom: 1px solid #1BDFA3;
+        backface-visibility: hidden;
+    }
+    
+
+}
+
+

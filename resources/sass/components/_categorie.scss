@@ -1,0 +1,69 @@
+.box-food{
+    text-align: center;
+    padding: 5rem 3rem;
+    box-shadow: 1rem 2rem 3rem  rgba(0,0,0,0.5);
+    height: 35rem;
+    cursor: pointer;
+    @include responed(tablet-landscape){
+        margin-left: 10rem;
+        margin-bottom: 4rem;
+        
+    }
+    @include responed(tablet-port){
+        width: 45%;
+       
+       
+        
+    }
+    @include responed(phone){
+        width: 44%;
+       margin:0 auto
+        
+    }
+    @include responed(small-phone){
+        width: 55%;
+       margin:0 auto
+        
+    }
+    &__container{
+        height: 30%;
+
+        
+    }
+    &__img{
+        width: 50%;
+        height: 90%;
+        
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        
+    }
+    &__pragraph{
+        font-size: 1.6rem;
+        font-weight: 300;
+        color:$color-white ;
+
+    }
+    &-1{
+        background-image: linear-gradient(90deg,rgba(#2955B9,1) 50%,rgba(#2F7ACC,1) 100%);
+
+    }
+    &-2{
+        background-image: linear-gradient(90deg,#1BDFA3 50%,#00FFB1 100%);
+
+    }
+    &-3{
+        background-image: linear-gradient(45deg,#7C1F1F 10%,#F5A4A4 100%);
+
+    }
+    &-4{
+        background-image: linear-gradient(45deg,#CE576F 10%,#C73EBE 100%);
+        
+
+    }
+    &-5{
+        background-image: linear-gradient(45deg,#A06C77 2%,#E9AA17 100%);
+
+    }
+
+}

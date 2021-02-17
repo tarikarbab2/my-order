@@ -1,0 +1,17 @@
+header{
+    background-image: linear-gradient(to right bottom,rgba($color-black,.6),rgba($color-black,.6)),url('../img/header.jpg');
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include responed(phone){
+        width: 100%;
+    }
+    
+}
