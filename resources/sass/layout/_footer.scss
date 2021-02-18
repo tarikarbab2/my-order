@@ -1,6 +1,6 @@
 .footer{
     padding: 6rem 0;
-    background-color: #373B44;
+    background-color: #000;
     color: $color-white;
     &-text{
         font-size: 3rem;
@@ -19,6 +19,10 @@
         @include responed(phone){
             width: 100%;
         }
+    }
+    &-text-right a{
+        text-decoration: none;
+        color: #fff;
     }
     &-copyright{
         text-align: center;

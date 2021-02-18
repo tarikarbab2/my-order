@@ -1,64 +1,183 @@
 .nav{
-    @include clear-fix;
-    
-    &__logo {
-        width: 14rem;
-        height: 14rem;
-        float: left;
-        padding-top: 1rem;
-        @include responed(tablet-landscape){
-            width: 9rem;
-            height: 9rem;
-            position: absolute;
-            top: 2rem;
-            left: 6rem;
+    display: flex;
+    height: 12rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #ffffff;
+    //position: absolute;
+    z-index: 50;
+    background-color: transparent;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    @include responed(small-tablet){
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+        background-color: transparent;
+        height: auto;
+        
+        
+       
+        
+        padding-top: 0;
+    }
+  
+    &__logo .nav-icon{
+        width: 10rem;
+        height: 10rem;
+        
+
+        
+  
+    }
+    &__logo{
+       margin-left: 5rem;
+        order: 0;
+        @include responed(small-tablet){
+            padding: 1.5rem;
+           background-color: transparent;
+            order: 0;
+            width: 100%;
+            margin-right: 0;
+            text-align: start;
+            height: 100%;
+           
             
         }
     }
-
-    &__list{
-
-        float: right;
+    &__logo h1{
+        @include responed(small-tablet){
+        font-size: 1.2rem;
+        }
+    }
+    &__items{
+        display: flex;
         list-style: none;
+        margin-right: 5rem;
         
-        font-weight: 300;
-        font-size: 2rem;
-        margin-top: 4rem;
+        align-items: flex-start;
+        font-size: 1.6rem;
+      
+        @include responed(small-tablet){
+            align-items: flex-end;
+            flex-direction: column;
+           display: none;
+            width: 15rem;
+            background-color: #3d59a7;
+            box-shadow: 1rem 1rem 1rem rgba(#000000,0.2);
+            
+           
+  
+        }
         @include responed(tablet-landscape){
-            display: none;
             
         }
+      
+       
         
+      
+        
+        order: 1;
+  
     }
     &__item{
-        display: inline-block;
-       
-        &:not(:last-child){
-            padding-right: 3rem;
-
+          
+      padding-left: 4rem;
+      font-weight: 500;
+      @include responed(tablet-port){
+          padding-left: 1.5rem;
+      }
+      @include responed(small-tablet){
+          
+         
+         margin-top: 1rem;
+  
+         padding: 0;
+        
+         color: #ffffff;
+         padding-right: 2rem;
+         margin-bottom: 1.5rem;
+        
+         
+         
+            
+          }
         }
-        
-    
-    }
+  
+  
+  &__link:link,
+  &__link:visited{
+      display: inline-block;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color:#ffffff ;
+      opacity: 70%;
+      @include responed(phone){
+          opacity: 100%;
+          font-size: 1.5rem;
+          
+      }
+      
+  }
+  &__link:hover,
+  &__link:active{
+      opacity: 100%;
+  }   
+      /////////////////////////navigation for phone
+    &__icon{
+          display: none;
+          @include responed(small-tablet){
+              display: flex;
+              width:7rem;
+              height: 7rem;
+              background-color: #ffffff;
+              border-radius: 10rem;
+              
+              box-shadow: .5rem 1rem 1rem rgba(#000000,0.3) ;
+              justify-content: center;
+              align-items: center;
+              order: -1;
+              
+              position: fixed;
+              margin-bottom: 2rem;
+              top: 2rem;
+              right: 1.5rem;
+              border: none;
+              &:focus{
+                  outline: none;
+              }
+              &:active{
+                  transform: translateY(2px);
+              }
    
-    &__link:link,
-    &__link:visited{
-        color: $color-white;
-        text-decoration: none;
-        transition: all 0.1s;
-        text-transform: uppercase;
-        
+      }
+          
+          
+      }
+      
+      &__hum{
+          width: 5rem;
+          height: 5rem;
+          
+         
+  
+      }
+  
+  
+  
+  
+  }
+  .nav-colored{
+    background-color: #000000;
+    @include responed(small-tablet){
+      background-color: transparent;
     }
     
-    &__link:hover,
-    &__link:active{
-        font-weight: 400;
-        padding-bottom:0.3rem ;
-        border-bottom: 1px solid #1BDFA3;
-        backface-visibility: hidden;
-    }
-    
-
-}
-
-
+  }
+  .nav-transparent{
+    background-color: transparent;
+  }

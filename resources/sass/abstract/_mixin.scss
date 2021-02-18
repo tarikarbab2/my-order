@@ -12,16 +12,22 @@
 
 
 @mixin responed($brekpoint) {
-    @if $brekpoint ==small-phone{
+    @if $brekpoint == small-phone{
         @media (max-width:30em){@content;}//480px
     }
     @if $brekpoint == phone{
         @media (max-width: 37.5em) {@content;} //600px
         }
+        @if $brekpoint == small-tablet{
+            @media (max-width: 46.25em) {@content;} //740px
+                   } 
 
     @if $brekpoint == tablet-port{
          @media (max-width: 56.25em) {@content;} //900px
             }
+            @if $brekpoint == normal{
+                @media (max-width: 56.25em) {@content;} //900px
+                   }
 
     @if $brekpoint == tablet-landscape{
          @media (max-width: 75em) {@content;} //1200px
@@ -30,4 +36,3 @@
           @media (min-width: 112.5em ) {@content;} //1800px
           }              
     }
-    
