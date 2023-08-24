@@ -1,0 +1,61 @@
+body{
+font-family: 'Lato',sans-serif,serif;
+    font-weight: 400;
+    line-height: 1.7;
+    
+   
+    text-rendering: optimizeLegibility;
+}
+
+
+.heading-primary{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+   
+    color: $color-white;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    
+    &__red{
+      
+    }
+   
+    @include responed(tablet-landscape){
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 5rem;
+    
+        
+    }
+    @include responed(phone){
+       font-size: 2rem;
+        
+    }
+}
+
+.heading-secondary{
+    font-size: 4rem;
+    
+    font-weight: 400;
+    color: $color-black;
+    &-white{
+        color:$color-white;
+    }
+    @include responed(tablet-landscape){
+        
+    }
+}
+.heading-third{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:$color-white;
+    text-align: center;
+    &-black{
+        color: $color-black;
+    }
+    
+}

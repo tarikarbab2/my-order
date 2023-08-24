@@ -1,0 +1,15 @@
+.rating{
+    margin-left:4rem;
+    margin-bottom: 1rem;
+    &-star{
+        width: 1.2rem;
+        display: inline-block;
+    }
+    &-text{
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+    &_recomend{
+        margin-left: 0;
+    }
+}
