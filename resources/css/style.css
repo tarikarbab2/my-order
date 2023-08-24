@@ -508,8 +508,8 @@ body {
       height: auto;
       padding-top: 0; } }
   .nav__logo .nav-icon {
-    width: 5rem;
-    height: 5rem; }
+    width: 7rem;
+    height: 6rem; }
   .nav__logo {
     margin-left: 5rem;
     -webkit-box-ordinal-group: 1;
@@ -619,7 +619,7 @@ body {
     height: 5rem; }
 
 .nav-colored {
-  background-color: rgba(0, 0, 0, 0.45); }
+  background-color: rgba(0, 0, 0, 0.2); }
   @media (max-width: 46.25em) {
     .nav-colored {
       background-color: transparent; } }
